@@ -18,56 +18,56 @@ export default class App extends React.Component {
             rel="stylesheet"
             href="//cdn.bootcss.com/spectre.css/0.1.29/spectre.min.css"
           />
-        </Head>{" "}
+        </Head>
         <ul className="breadcrumb">
           <li className="breadcrumb-item">
-            <Link href="/"> Home </Link>{" "}
-          </li>{" "}
-          <li className="breadcrumb-item"> {this.props.card.name} </li>{" "}
-        </ul>{" "}
+            <Link href="/">Home</Link>
+          </li>
+          <li className="breadcrumb-item">{this.props.card.name}</li>
+        </ul>
         <div className="columns">
           <div className="column col-4">
             <p>
-              <img src={this.props.card.imageUrl} />{" "}
-            </p>{" "}
-          </div>{" "}
+              <img src={this.props.card.imageUrl} />
+            </p>
+          </div>
           <div className="column col-8 empty">
             <div className="form-horizontal">
               <div className="form-group">
                 <div className="col-3">
-                  <label className="form-label"> Name </label>{" "}
-                </div>{" "}
+                  <label className="form-label">Name</label>
+                </div>
                 <div className="col-9">
-                  <span> {this.props.card.name} </span>{" "}
-                </div>{" "}
-              </div>{" "}
+                  <span>{this.props.card.name}</span>
+                </div>
+              </div>
               <div className="form-group">
                 <div className="col-3">
-                  <label className="form-label"> HP </label>{" "}
-                </div>{" "}
+                  <label className="form-label">HP</label>
+                </div>
                 <div className="col-9">
-                  <span> {this.props.card.hp} </span>{" "}
-                </div>{" "}
-              </div>{" "}
+                  <span>{this.props.card.hp}</span>
+                </div>
+              </div>
               <div className="form-group">
                 <div className="col-3">
-                  <label className="form-label"> Series </label>{" "}
-                </div>{" "}
+                  <label className="form-label">Series</label>
+                </div>
                 <div className="col-9">
-                  <span> {this.props.card.series} </span>{" "}
-                </div>{" "}
-              </div>{" "}
+                  <span>{this.props.card.series}</span>
+                </div>
+              </div>
               <div className="form-group">
                 <div className="col-3">
-                  <label className="form-label"> Set </label>{" "}
-                </div>{" "}
+                  <label className="form-label">Set</label>
+                </div>
                 <div className="col-9">
-                  <span> {this.props.card.set} </span>{" "}
-                </div>{" "}
-              </div>{" "}
-            </div>{" "}
-          </div>{" "}
-        </div>{" "}
+                  <span>{this.props.card.set}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

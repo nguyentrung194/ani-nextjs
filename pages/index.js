@@ -24,40 +24,42 @@ export default class App extends React.Component {
             rel="stylesheet"
             href="//cdn.bootcss.com/spectre.css/0.1.29/spectre.min.css"
           />
-        </Head>{" "}
+          <link
+            rel="stylesheet"
+            href="/home/trung/program language/ani-nextjs/pages/main.css"
+          />
+        </Head>
         <div className="columns">
-          {" "}
           {this.props.cards.map((card, i) => (
-            <div className="col-md-3" key={i}>
+            <div class="col-md-3" className="col-md-3" key={i}>
               <div style={{ margin: 10 }}>
                 <Link href={`/cards?id=${card.id}`}>
-                  {" "}
                   {
                     <a>
                       <img src={card.imageUrl} className="img-responsive" />
                     </a>
-                  }{" "}
-                </Link>{" "}
-              </div>{" "}
+                  }
+                </Link>
+              </div>
             </div>
-          ))}{" "}
-        </div>{" "}
-        <div className="divider"> </div>{" "}
+          ))}
+        </div>
+        <div className="divider"></div>
         <div className="container">
           <div className="float-right">
             <ul className="pagination">
               <li className="page-item">
-                <Link href={`/?page=1`}> 1 </Link>{" "}
-              </li>{" "}
+                <Link href={`/?page=1`}>1</Link>
+              </li>
               <li className="page-item">
-                <Link href={`/?page=2`}> 2 </Link>{" "}
-              </li>{" "}
+                <Link href={`/?page=2`}>2</Link>
+              </li>
               <li className="page-item">
-                <Link href={`/?page=3`}> 3 </Link>{" "}
-              </li>{" "}
-            </ul>{" "}
-          </div>{" "}
-        </div>{" "}
+                <Link href={`/?page=3`}>3</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     );
   }
